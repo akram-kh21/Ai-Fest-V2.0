@@ -1,0 +1,440 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #014beb9d;
+    color: #ffffff;
+}
+/* navbar */
+header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 9%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+
+img{
+    height: 100px;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 25px;
+    border-bottom: 2px solid transparent;
+    transition: all .40s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid #000000;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #000000;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+/* home */
+section{
+    padding: 0 19%;
+}
+
+.home{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid: 2rem;
+}
+
+.home_text h2{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 45px;
+    color: rgb(17, 39, 184);
+}
+
+.home_text p{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.home_img img{
+    width: 100%;
+    height: auto;
+}
+
+/* about */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.about_text{
+    padding: 0 10%;
+}
+
+.about_text h2{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 45px;
+    color: rgb(19, 3, 69);
+}
+.about_text p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+}
+
+
+.location{
+    display: flex;
+    align-items: center;
+}
+.location iframe{
+    border: #f5f5f5 5px solid;
+    border-radius: 30px;
+}
+
+.when_where{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.when_where h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.when_where p{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* schedule */
+.schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.schedule h2{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 45px;
+    color: rgb(19, 3, 69);
+    height: 40%;
+}
+
+.schedule_table{
+    border: #f5f5f5 5px solid;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* sponsors */
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.sponsors h1{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 45px;
+    color: rgb(19, 3, 69);
+}
+
+/* register */
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.form h2{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 45px;
+    color: rgb(19, 3, 69);
+}
+
+.form_table{
+    border: #1129e0 5px solid;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form_func{
+    position: relative;
+    margin-bottom: 15px;
+}
+.form_func label{
+    font-family: 'Protest Riot', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.form_func input,
+.form_func textarea{
+    font-family: 'Protest Riot', sans-serif;
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;   
+    border-radius: 10px;
+    outline: none;
+}
+.form_func .icon{
+    position: absolute;
+    top: 71%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: transparent;
+    pointer-events: none;
+}
+.form_func.success input,
+.form_func.success textarea{
+    border-color: #2ecc71;
+}
+.form_func.success .icon{
+    color: #2ecc71;
+}
+.form_func.error input,
+.form_func.error textarea{
+    border-color: #e74c3c;
+}
+.form_func.error .icon,
+.form_func.error input::placeholder,
+.form_func.error textarea::placeholder{
+    color: #e74c3c;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Protest Riot', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+button:hover{
+    background-color: rgba(29, 35, 201, 0.646);
+}
+
+.popup{
+    font-family: 'Protest Riot', sans-serif;
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.popup-content{
+    margin: 15% auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #1096d0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.closebtn{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.closebtn:hover,
+.closebtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* social-media */
+.sociel{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.sociel i{
+    display: block;
+    margin: 26px 0;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    transition: all .40s ease;
+}
+
+.sociel i:hover{
+    transform: scale(1.5);
+    color: rgb(15, 72, 187);
+}
+/* media query */
+@media all and (max-width: 600px){
+    .home_img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 10%;
+    }
+
+    .about_text{
+        padding: 0 10%;
+    }
+
+    .about_text h2{
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin: 0 0 45px;
+        color: rgb(19, 3, 69);
+    }
+    .about_text p{
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+        color: rgb(0, 0, 0);
+    }
+
+    .form{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form_func{
+        position: relative;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .form_func input,
+    .form_func textarea{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .form_func .icon{
+        position: absolute;
+        top: 71%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: transparent;
+        pointer-events: none;
+    }
+
+    .form_func.success input,
+    .form_func.success textarea{
+        border-color: #2ecc71;
+    }
+
+    .form_func.success .icon{
+        color: #2ecc71;
+    }
+
+    .form_func.error input,
+    .form_func.error textarea{
+        border-color: #e74c3c;
+    }
+
+    .form_func.error .icon{
+        color: #e74c3c;
+    }
+}
